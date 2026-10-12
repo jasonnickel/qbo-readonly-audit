@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Connecting</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:40rem;margin:20vh auto;padding:0 16px;text-align:center;color:#222;background:#fff}</style>
+</head>
+<body>
+<p>Finishing the QuickBooks connection on this computer...</p>
+<script>
+// OAuth redirect target. The authorization code is handed straight to the
+// one-time listener on this same computer (localhost) and never stored here.
+location.replace('http://localhost:8000/callback' + location.search);
+</script>
+</body>
+</html>
